@@ -8,6 +8,7 @@
         body {
             text-align: center;
             padding: 20px;
+            color: #333;
         }
     </style>
 </head>
@@ -19,7 +20,7 @@
         function vibrate() {
             if ("vibrate" in navigator) {
                 // Vibrate for 1000ms (1 second)
-                navigator.vibrate(1000);
+                navigator.vibrate(3000);
             } else {
                 alert("Vibration is not supported on your device.");
             }
