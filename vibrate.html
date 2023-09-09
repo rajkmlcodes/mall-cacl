@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibrate Phone</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vibrate Your Phone</h1>
+    <button onclick="vibrate()">Vibrate</button>
+
+    <script>
+        function vibrate() {
+            if ("vibrate" in navigator) {
+                // Vibrate for 1000ms (1 second)
+                navigator.vibrate(1000);
+            } else {
+                alert("Vibration is not supported on your device.");
+            }
+        }
+    </script>
+</body>
+</html>
